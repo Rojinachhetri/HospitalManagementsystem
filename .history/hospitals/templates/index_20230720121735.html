@@ -1,0 +1,32 @@
+{% extends 'navigation.html' %} {% load static %} {% block body %}
+
+<head>
+    <style media="screen">
+        .jumbotron {
+            width: 100;
+            height: 600px;
+            background-image: url('{% static "<img src="{% static 'images/about2.jpg' %}" alt="img5">
+ " %}');
+ background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .jumbotron h5,
+        h3 {
+            text-align: center;
+        }
+        
+        .alert {
+            margin: 0px;
+        }
+    </style>
+</head>
+<br>
+<br>
+
+<div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <br><br>
+    <h5 class="display-3 glow">"A hospital alone shows what war is."</h5>
+    <br><br><br><br>
+</div>
+{% endblock%}
